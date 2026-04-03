@@ -3,69 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HE Drone Takes - Filmagens com Drone</title>
+  <title>HE Drone Takes - Filmagens Profissionais</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black text-white">
+<body class="bg-black text-white relative">
 
-  <!-- Header -->
-  <header class="flex justify-between items-center p-6 bg-black/80 backdrop-blur">
+  <!-- VIDEO BACKGROUND -->
+  <div class="absolute top-0 left-0 w-full h-screen overflow-hidden -z-10">
+    <video autoplay muted loop class="w-full h-full object-cover opacity-50">
+      <source src="https://cdn.coverr.co/videos/coverr-drone-flight-over-city-5176/1080p.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- HEADER -->
+  <header class="flex justify-between items-center p-6">
     <h1 class="text-2xl font-bold">HE Drone Takes</h1>
-    <nav class="space-x-6">
-      <a href="#" class="hover:text-gray-400">Início</a>
-      <a href="#servicos" class="hover:text-gray-400">Serviços</a>
-      <a href="#portfolio" class="hover:text-gray-400">Portfólio</a>
-      <a href="#contato" class="hover:text-gray-400">Contato</a>
-    </nav>
+    <a href="https://wa.me/5516997681179" target="_blank" class="bg-green-500 px-4 py-2 rounded-xl font-semibold hover:bg-green-400">
+      WhatsApp
+    </a>
   </header>
 
-  <!-- Hero -->
-  <section class="h-screen flex flex-col justify-center items-center text-center">
-    <h2 class="text-5xl font-bold mb-4">Filmagens Profissionais com Drone</h2>
-    <p class="text-lg text-gray-300 mb-6">Capturando imagens aéreas incríveis para elevar seu projeto.</p>
-    <a href="#contato" class="bg-white text-black px-6 py-3 rounded-2xl font-semibold hover:bg-gray-300">Solicitar Orçamento</a>
+  <!-- HERO -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4">
+      Imagens Aéreas Cinematográficas
+    </h2>
+    <p class="text-lg text-gray-300 mb-4">
+      Filmagens com drone em Ribeirão Preto e região
+    </p>
+    <p class="mb-6">
+      Valorize seu projeto com imagens profissionais
+    </p>
+    <a href="https://wa.me/5516997681179" target="_blank" class="bg-white text-black px-6 py-3 rounded-2xl font-semibold hover:bg-gray-300">
+      Solicitar Orçamento
+    </a>
   </section>
 
-  <!-- Serviços -->
+  <!-- SERVIÇOS -->
   <section id="servicos" class="p-12 bg-gray-900">
     <h3 class="text-3xl font-bold mb-8 text-center">Serviços</h3>
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-black p-6 rounded-2xl shadow">
+
+      <div class="bg-black p-6 rounded-2xl">
         <h4 class="text-xl font-semibold mb-2">Eventos</h4>
-        <p>Casamentos, festas e eventos com imagens aéreas cinematográficas.</p>
+        <p>Casamentos, festas e eventos com imagens aéreas profissionais.</p>
       </div>
-      <div class="bg-black p-6 rounded-2xl shadow">
+
+      <div class="bg-black p-6 rounded-2xl">
         <h4 class="text-xl font-semibold mb-2">Imobiliário</h4>
-        <p>Valorize imóveis com vídeos e fotos aéreas profissionais.</p>
+        <p>Vídeos e fotos para valorizar imóveis.</p>
       </div>
-      <div class="bg-black p-6 rounded-2xl shadow">
+
+      <div class="bg-black p-6 rounded-2xl">
         <h4 class="text-xl font-semibold mb-2">Empresas</h4>
         <p>Conteúdo visual para marketing e redes sociais.</p>
       </div>
+
     </div>
   </section>
 
-  <!-- Portfólio -->
+  <!-- PORTFÓLIO -->
   <section id="portfolio" class="p-12">
     <h3 class="text-3xl font-bold mb-8 text-center">Portfólio</h3>
+
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-gray-800 h-48 rounded-2xl"></div>
-      <div class="bg-gray-800 h-48 rounded-2xl"></div>
-      <div class="bg-gray-800 h-48 rounded-2xl"></div>
+
+      <iframe class="w-full h-48 rounded-2xl" src="https://www.youtube.com/embed/Scxs7L0vhZ4" allowfullscreen></iframe>
+
+      <iframe class="w-full h-48 rounded-2xl" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+
+      <iframe class="w-full h-48 rounded-2xl" src="https://www.youtube.com/embed/aqz-KE-bpKQ" allowfullscreen></iframe>
+
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="p-12 bg-gray-900 text-center">
-    <h3 class="text-3xl font-bold mb-4">Contato</h3>
-    <p class="mb-4">Entre em contato para orçamento:</p>
-    <p class="text-lg">WhatsApp: +55 (16) 9 9768-1179</p>
-    <p class="text-lg">Email: hedronetakes@gmail.com</p>
+  <!-- DIFERENCIAL -->
+  <section class="p-12 bg-gray-900 text-center">
+    <h3 class="text-3xl font-bold mb-6">Por que escolher a HE Drone Takes?</h3>
+    <p>✔ Imagens em alta qualidade</p>
+    <p>✔ Atendimento rápido</p>
+    <p>✔ Equipamentos profissionais</p>
+    <p>✔ Edição cinematográfica</p>
   </section>
 
-  <!-- Footer -->
+  <!-- CONTATO -->
+  <section id="contato" class="p-12 text-center">
+    <h3 class="text-3xl font-bold mb-4">Contato</h3>
+    <p class="mb-4">Entre em contato agora:</p>
+
+    <a href="https://wa.me/5516997681179" target="_blank" class="bg-green-500 px-6 py-3 rounded-2xl font-semibold hover:bg-green-400">
+      Falar no WhatsApp
+    </a>
+
+    <p class="mt-4">Email: hedronetakes@gmail.com</p>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="text-center p-6 bg-black">
-    <p>© 2026 HE Drone Takes - Todos os direitos reservados</p>
+    <p>© 2026 HE Drone Takes</p>
   </footer>
 
 </body>
