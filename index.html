@@ -3,130 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SkyView - Filmagens com Drone</title>
+  <title>SkyView Drone</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-black text-white">
 
-<!-- HEADER PREMIUM -->
-<header class="fixed top-0 left-0 w-full z-50 bg-black">
-  <div class="flex justify-between items-center px-8 py-4 border-t border-white border-b">
-    
-    <!-- LOGO -->
-    <h1 class="text-xl font-semibold tracking-wide">SkyView</h1>
+<body class="bg-[#0b1a2b] text-white">
 
-    <!-- MENU -->
-    <nav class="space-x-8 text-sm">
-      <a href="#inicio" class="border-b border-transparent hover:border-white transition">Home</a>
-      <a href="#servicos" class="border-b border-transparent hover:border-white transition">Serviços</a>
-      <a href="#contato" class="border-b border-transparent hover:border-white transition">Contato</a>
+<!-- HEADER -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#0b1a2b] border-t border-white border-b">
+  <div class="flex justify-between items-center px-6 py-4">
+
+    <!-- LOGO + NOME -->
+    <div class="flex items-center gap-2">
+      <img src="logo.png" class="w-8 h-8">
+      <h1 class="text-xl font-semibold">
+        <span class="text-blue-400">Sky</span><span class="text-white">View</span>
+      </h1>
+    </div>
+
+    <!-- MENU DESKTOP -->
+    <nav class="hidden md:flex gap-8 text-sm">
+      <a href="#inicio" class="hover:border-b border-white">Home</a>
+      <a href="#servicos" class="hover:border-b border-white">Serviços</a>
+      <a href="#portfolio" class="hover:border-b border-white">Portfólio</a>
+      <a href="#contato" class="hover:border-b border-white">Contato</a>
     </nav>
 
+    <!-- MENU MOBILE -->
+    <button onclick="toggleMenu()" class="md:hidden text-2xl">☰</button>
+  </div>
+
+  <!-- DROPDOWN MOBILE -->
+  <div id="menu" class="hidden flex flex-col text-center bg-[#0b1a2b] pb-4">
+    <a href="#inicio" class="py-2">Home</a>
+    <a href="#servicos" class="py-2">Serviços</a>
+    <a href="#portfolio" class="py-2">Portfólio</a>
+    <a href="#contato" class="py-2">Contato</a>
   </div>
 </header>
 
 <!-- HERO -->
 <section id="inicio" class="h-screen flex flex-col justify-center items-center text-center px-4 pt-24">
-  <h2 class="text-5xl font-bold mb-4 text-right ml-auto mr-10 -mt-10">Imagens Aéreas</h2>
-  
+  <h2 class="text-5xl font-bold mb-6">Imagens Aéreas</h2>
 
-  <!-- DIFERENCIAIS -->
-  <div class="grid md:grid-cols-2 gap-8 mt-8 mb-8 text-center">
-    
+  <div class="grid md:grid-cols-2 gap-8 mb-8">
     <div>
-      <div class="text-3xl mb-2">✔</div>
-      <h4 class="font-semibold">Equipamento de Qualidade</h4>
-      <p class="text-gray-400 text-sm">Drones e câmeras de alto padrão para imagens profissionais</p>
+      <div class="text-3xl">✔</div>
+      <p>Equipamento de Qualidade</p>
     </div>
-
     <div>
-      <div class="text-3xl mb-2">🌍</div>
-      <h4 class="font-semibold">Atuação Regional</h4>
-      <p class="text-gray-400 text-sm">Equipes atuando em Ribeirão Preto e toda a região</p>
+      <div class="text-3xl">🌍</div>
+      <p>Atuação em Ribeirão Preto e região</p>
     </div>
-
   </div>
 
-  <a href="https://wa.me/5516997681179" class="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-300">
-    Solicitar Orçamento
-  </a>
+  <a href="https://wa.me/5516997681179" class="bg-blue-500 px-6 py-3 rounded-xl hover:bg-blue-400">Solicitar Orçamento</a>
 </section>
 
 <!-- SERVIÇOS -->
-<section id="servicos" class="p-12 bg-gray-900">
-  <h3 class="text-3xl font-bold mb-8 text-center">Serviços</h3>
-
+<section id="servicos" class="p-12">
+  <h3 class="text-3xl font-bold text-center mb-8">Serviços</h3>
   <div class="grid md:grid-cols-2 gap-6">
-
-    <a href="#eventos" class="bg-black p-6 rounded-2xl block">
-      <h4 class="text-xl font-bold">Eventos</h4>
-      <p>Clique para ver mais</p>
-    </a>
-
-    <a href="#imobiliario" class="bg-black p-6 rounded-2xl block">
-      <h4 class="text-xl font-bold">Imobiliário</h4>
-      <p>Clique para ver mais</p>
-    </a>
-
-    <a href="#empresas" class="bg-black p-6 rounded-2xl block">
-      <h4 class="text-xl font-bold">Empresas</h4>
-      <p>Clique para ver mais</p>
-    </a>
-
-    <a href="#inspecao" class="bg-black p-6 rounded-2xl block">
-      <h4 class="text-xl font-bold">Inspeção Predial</h4>
-      <p>Clique para ver mais</p>
-    </a>
-
-    <a href="#corretoria" class="bg-black p-6 rounded-2xl block">
-      <h4 class="text-xl font-bold">Corretoria</h4>
-      <p>Clique para ver mais</p>
-    </a>
-
-    <a href="#turismo" class="bg-black p-6 rounded-2xl block">
-      <h4 class="text-xl font-bold">Turismo e Paisagens</h4>
-      <p>Clique para ver mais</p>
-    </a>
-
+    <a href="#" class="bg-[#111] p-6 rounded-xl">Eventos</a>
+    <a href="#" class="bg-[#111] p-6 rounded-xl">Imobiliário</a>
+    <a href="#" class="bg-[#111] p-6 rounded-xl">Empresas</a>
+    <a href="#" class="bg-[#111] p-6 rounded-xl">Inspeção Predial</a>
+    <a href="#" class="bg-[#111] p-6 rounded-xl">Corretoria</a>
+    <a href="#" class="bg-[#111] p-6 rounded-xl">Turismo</a>
   </div>
 </section>
 
-<!-- DETALHES -->
-<section id="eventos" class="p-12">
-  <h3 class="text-2xl font-bold mb-4">Eventos</h3>
-  <p>Filmagens aéreas para casamentos, festas e eventos com estilo cinematográfico.</p>
-</section>
-
-<section id="imobiliario" class="p-12 bg-gray-900">
-  <h3 class="text-2xl font-bold mb-4">Imobiliário</h3>
-  <p>Vídeos profissionais para valorizar imóveis e acelerar vendas.</p>
-</section>
-
-<section id="empresas" class="p-12">
-  <h3 class="text-2xl font-bold mb-4">Empresas</h3>
-  <p>Conteúdo visual para marketing, redes sociais e apresentação empresarial.</p>
-</section>
-
-<section id="inspecao" class="p-12 bg-gray-900">
-  <h3 class="text-2xl font-bold mb-4">Inspeção Predial</h3>
-  <p>Inspeção de estruturas com drone, reduzindo riscos e custos operacionais.</p>
-</section>
-
-<section id="corretoria" class="p-12">
-  <h3 class="text-2xl font-bold mb-4">Corretoria</h3>
-  <p>Imagens para corretores venderem imóveis com mais impacto e profissionalismo.</p>
-</section>
-
-<section id="turismo" class="p-12 bg-gray-900">
-  <h3 class="text-2xl font-bold mb-4">Turismo e Paisagens</h3>
-  <p>Captura de paisagens e pontos turísticos com qualidade cinematográfica.</p>
-</section>
-
-<!-- CONTATO -->
-<section id="contato" class="p-12 text-center">
+<!-- CONTATO / REDES -->
+<section id="contato" class="text-center p-12">
   <h3 class="text-3xl font-bold mb-4">Contato</h3>
-  <a href="https://wa.me/5516997681179" class="bg-green-500 px-6 py-3 rounded-xl">Falar no WhatsApp</a>
+
+  <div class="flex justify-center gap-6 text-2xl mt-6">
+    <a href="#">📸</a>
+    <a href="#">🎵</a>
+    <a href="#">📘</a>
+    <a href="https://wa.me/5516997681179">💬</a>
+  </div>
 </section>
+
+<script>
+function toggleMenu(){
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('hidden');
+}
+</script>
 
 </body>
 </html>
